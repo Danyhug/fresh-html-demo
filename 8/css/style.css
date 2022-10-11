@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+h1 {font-size: 30px; font-weight: normal;}
+h2 {font-size: 40px;font-weight: normal; text-align: center; color: rgb(66,169,169);}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+body {
+  font-size: 16px;
+}
+
+header {
+  padding: 80px 0;
+  height: 600px;
+  color: #FFF;
+  background: url(../images/banner.jpg) no-repeat center;
+  background-size: cover;
+}
+.mine-img {
+  margin-right: 80px;
+  height: 450px;
+  float: left;
+}
+.mine-img > img {
+  height: inherit;
+}
+.header-content {
+  float: left;
+  padding: 50px 0;
+}
+.header-content-top {
+  padding: 20px 0;
+  border-bottom: 1px solid #FFF;
+}
+.sub-h1 {
+  font-size: 12px;
+  letter-spacing: 8px;
+  color: rgb(255, 255, 255, .8);
+}
+.header-content-bottom {
+  padding: 18px 0;
+  line-height: 2.2;
+}
+.header-content-bottom > p > span {
+  display: inline-block;
+  width: 160px;
+  font-weight: bold;
+}
+
+/* 导航 */
+nav {
+  background-color: rgb(0,139,139);
+  overflow: hidden;
+}
+.nav {
+  width: 900px;
+  margin: auto;
+}
+.nav > li {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.nav > li > a {
+  display: block;
+  color: #FFF;
+  line-height: 50px;
+}
+.nav > li > a:hover {
+  color: rgb(0,139,139);
+  background-color: rgba(255, 255, 255, .8);
+}
+
+/* 关于我 */
+main > section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+h2 {
+  padding-bottom: 14px;
+  border-bottom: 4px double rgba(247, 197, 106, 0.35);
+}
+.about-left {
+  padding: 40px 0;
+  width: 800px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #999;
+  text-indent: 2em;
+  float: left;
+}
+
+.about-right {
+  text-align: center;
+  padding: 0 40px;
+  width: 330px;
+  height: 270px;
+  line-height: 2;
+  float: right;
+  color: #999;
+  font-size: 14px;
+  border: 3px double rgb(0,139,139);
+}
+.about-right > .title {
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 24px;
+  color: rgb(0,139,139);
+}
+.about-right ul {
+  text-align: left;
+}
+.about-right li::before {
+  content: ">";
+  display: inline-block;
+  color: #999;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* 教育 */
+.my-edu {
+  color: #999;
+  font-size: 14px;
+  background-color: #000;
+}
+.my-edu > .wrap {position: relative;}
+.line {
+  height: 830px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, .5);
+  position: absolute;
+  left: 50%;
+  top: 100px;
+}
+.my-edu > h2 {
+  color: #008B8B;
+}
+.my-edu .icon {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  padding-top: 6px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(0,139,139);
+  position: absolute;
+  left: 50%;
+  margin-left: -24px;
+}
+.edu-list-item {
+  padding: 70px 0 150px 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.degree {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #FFF;
+  background-color: rgb(0,139,139);
+  position: absolute;
+  left: 30%;
+}
+.school {
+  position: absolute;
+  right: -5%;
+}
+.school-name {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 16px 20px;
+  color: #F7E612;
+  border: 1px solid #F7E612;
+}
+.school > p {
+  width: 580px;
+}
+
+/* 专业技能 */
+.skill {}
+.skill-items {
+  overflow: hidden;
+}
+.skill-item {
+  width: 50%;
+  padding: 40px;
+  float: left;
+  font-size: 15px;
+  line-height: 2em;
+}
+.skill-progress-bar {
+  height: 10px;
+  background-color: rgb(17,174,216);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.skill-success-progress-bar {
+  width: 50%;
+  height: inherit;
+  background-color: rgb(108,132,41);
+}
+
+/* 作品 */
+.works {
+  background-color: #000000;
+}
+.works-items {
+  margin-top: 60px;
+  overflow: hidden;
+}
+.works-item {
+  width: 33.3%;
+  padding: 15px;
+  float: left;
+}
+.works-item > img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* 联系我们 */
+.contact {
+}
+.contact-content {
+  margin-top: 60px;
+  overflow: ;
+}
+.contact-left {
+  width: 600px;
+  float: left;
+}
+.contact-left > img {
+  width: inherit;
+}
+.contact-right {
+  width: 600px;
+  float: left;
+  padding: 10px 20px;
+}
+
+.contact-right-text i {
+  margin: 0 30px;
+  display: inline-block;
+  height: 20px;
+  width: 1px;
+  background-color: #333;
+  position: relative;
+  top: 2px;
+}
+.contact-right-text .contact-text-right {
+  position: relative;
+  top: 10px;
+  width: 200px;
+  display: inline-block;
+}
+form {
+  margin-top: 40px;
+}
+form > input {
+  display: block;
+  width: 300px;
+  font-size: 16px;
+  padding: 10px 14px;
+  margin-bottom: 30px;
+}
+textarea {
+  padding: 10px 14px;
+  width: 500px;
+  height: 140px;
+}
+button {
+  margin-top: 16px;
+  display: block;
+  width: 500px;
+  height: 40px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  background-color: rgb(0,139,139);
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  color: #FFF;
+  background-color: rgb(31,31,31);
+}

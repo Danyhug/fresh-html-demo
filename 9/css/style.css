@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  line-height: 48px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+}
+body .container .btn:hover {
+  background-color: transparent;
+  color: #FFF;
+}
+.title-text {
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 620px;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+  color: #00c853;
+  text-align: center;
+  font-weight: normal;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+h3 {
+  font-size: 24px;
+}
+
+body {
+  background-color: #666;
+  font-size: 16px;
+}
+
+.fixed-box {
+  width: 750px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #FFF;
+  background-color: rgb(0,200,83);
+}
+.fixed-box .btn {
+  margin-top: 60px;
+  color: rgb(0,200,83);
+}
+.fixed-box > .logo {
+  margin: 60px auto;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo > img {
+  margin-top: -20px;
+  width: inherit;
+}
+.fixed-text {
+  padding: 0 60px;
+  font-size: 28px;
+}
+.fixed-text .product {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.content {
+  margin-left: 750px;
+  background-color: rgb(255,255,255);
+}
+.content > div {
+  margin-bottom: 50px;
+}
+.wrap {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.love {}
+.love-box {
+  overflow: hidden;
+}
+.love-box > li {
+  padding: 10px 16px;
+  height: 180px;
+  width: 220px;
+  float: left;
+  color: #FFF;
+  position: relative;
+}
+.love-box > li h3 {
+  padding: 6px 0;
+}
+.love-box > li a {
+  position: absolute;
+  bottom: 20px;
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: rgb(255,0,128);
+}
+.love-box > li:nth-child(1) {background-color: rgb(255,0,128);}
+.love-box > li:nth-child(2) {background-color: rgb(3,46,255);}
+.love-box > li:nth-child(3) {background-color: rgb(0,200,83);}
+.love-box > li:nth-child(2) a {color: rgb(3,46,255);}
+.love-box > li:nth-child(3) a {color: rgb(0,200,83);}
+.love-box > li:nth-child(2) {
+  margin: 0 20px;
+}
+
+/* 我的性格 */
+.nature {}
+.nature-box {}
+.nature-box > li {
+  margin: 18px 0;
+  width: 100%;
+}
+.process-bar {
+  position: relative;
+  height: 16px;
+  line-height: 16px;
+  background-color: rgb(233,236,239);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.success-process-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+  color: #FFF;
+}
+
+/* 我的作品 */
+.work {}
+.work-box {
+  overflow: hidden;
+}
+.work-box > li {
+  border: 1px solid rgba(0, 0, 0, .125);
+  float: left;
+  width: 340px;
+  height: 300px;
+}
+.work-box > li a {
+  color: #00c853;
+  font-size: 18px;
+}
+.work-box > li a:hover {color: #009624;}
+.work-box > li .title {
+  margin-bottom: 8px;
+}
+.work-box > li:nth-child(1) {
+  margin-right: 20px;
+}
+.work-box > li > img {
+  width: 100%;
+  height: 200px;
+}
+.work-box > li > .work-box-text {
+  padding: 20px;
+}
+
+/* 我的信息 */
+.info {
+  color: #00c853;
+  background-color: #343a40;
+  overflow: hidden;
+  font-size: 18px;
+}
+.info > li {
+  padding: 20px;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.info > li > img {
+  height: 50px;
+}
+.info > li > p {
+  margin-top: 10px;
+}
+
+footer {
+  padding: 60px 0 100px 0;
+  color: #999;
+  text-align: center;
+}
+
+.fixed-footer {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(67,74,84);
+}

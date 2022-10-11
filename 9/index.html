@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    <!-- 最外层父元素，无作用 -->
+    <div class="container">
+      <!-- 左侧绿色背景那里 -->
+      <!-- 固定定位，宽度750像素，高度占满页面，距离上0像素，距离左0像素，文字居中，文字颜色为白色，背景颜色为绿色 -->
+      <div class="fixed-box">
+        <!-- 头像部分，上下外边距60像素，左右居中，宽度210像素，高度210像素，圆角尺寸50%让他成为圆形，隐藏溢出部分 -->
+        <div class="logo">
+          <!-- 宽度继承父元素 -->
+          <img src="images/my.jpg" alt="">
+        </div>
+        <!-- 下方文字 -->
+        <!-- 内边距左右60像素，文字大小28像素 -->
+        <div class="fixed-text">
+          <!-- 上方文字 -->
+          <p>
+            我是<strong>刘鹤</strong>,
+            来自<strong>20班</strong>
+          </p>
+          <!-- 下方文字部分，上外边距16像素，文字大小16像素，行高1.8倍文字大小 -->
+          <p class="product">
+            本人有着善于表达的沟通能力，对任何事情有上进心、认真负责、待人真诚、处人随和！我将用心去对待每一个人，用爱去感染每一个人。
+          </p>
+          <!-- 所有类名btn的样式都基本相同，因为要设置宽高，所以设置为行内块级元素，设置行高为高度让他垂直居中，设置文字大小为18像素，设置文字居中，设置背景颜色，设置1像素的边框，设置圆角5像素 -->
+          <a href="" class="btn">了解我</a>
+        </div>
+      </div>
+      
+      <!-- 右侧的部分，左外边距750像素，不然会在右侧绿色盒子的下面，背景颜色白色 -->
+      <div class="content">
+        <!-- 宽度700像素，水平居中，下外边距为50像素 -->
+        <div class="wrap">
+          <div class="love">
+            <!-- 每个元素上面的部分样式相同 -->
+            <!-- 水平居中，内边距为上下20像素，宽度620像素，水平居中 -->
+            <div class="title-text">
+              <!-- 所有h2的样式也相同，设置文字大小颜色，文字居中，让文字不加粗，设置内边距，外边距，下方的横线是因为只下边款 -->
+              <h2>我的爱好</h2>
+              <div class="text">跳绳、跑步、看电影、听音乐。</div>
+            </div>
+            <!-- 清除浮动 -->
+            <ul class="love-box">
+              <!-- 为每个li设置宽高，为第二个li设置左右外边距，为每个li设置不同的背景颜色，设置内边距，设置左浮动让他们水平显示，设置文字颜色，设置相对定位 -->
+              <li>
+                <!-- 设置内边距和文字大小 -->
+                <h3>跑步</h3>
+                <p>摔跤了，不要哭，再爬起来，站直一笑，拍拍尘灰，继续奔跑</p>
+                <!-- 设置a为决定定位，距离下方20像素，让所有a标签的位置相同 -->
+                <a href="" class="btn">了解我</a>
+              </li>
+              <li>
+                <h3>看电影</h3>
+                <p>生活没有彩排，每一天都是现场直播</p>
+                <a href="" class="btn">了解我</a>
+              </li>
+              <li>
+                <h3>听音乐</h3>
+                <p>让自由的艺术和音乐本身美的规律冲破技术的樊篱,给思想和心灵以自由</p>
+                <a href="" class="btn">了解我</a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- 性格 -->
+          <div class="nature">
+            <div class="title-text">
+              <h2>我的性格</h2>
+              <div class="text">坚决果断，心平气和，善解人意，不忙不暴</div>
+            </div>
+            <ul class="nature-box">
+              <li>
+                <p>坚决果断</p>
+                <!-- 进度条，设置圆角宽高，隐藏溢出部分 -->
+                <div class="process-bar">
+                  <!-- 已完成的进度条，为他的子元素，覆盖在父元素的上面，所以会有进度条的感觉，设置了宽，高度继承父元素 -->
+                  <div class="success-process-bar" style="width: 85%; background-color: rgb(255,0,128);">85%</div>
+                </div>
+              </li>
+              <li>
+                <p>心平气和</p>
+                <div class="process-bar">
+                  <div class="success-process-bar" style="width: 100%; background-color: rgb(61,90,254);">100%</div>
+                </div>
+              </li>
+              <li>
+                <p>坚决果断</p>
+                <div class="process-bar">
+                  <div class="success-process-bar" style="width: 50%; background-color: rgb(255,59,48);">50%</div>
+                </div>
+              </li>
+              <li>
+                <p>不忙不暴</p>
+                <div class="process-bar">
+                  <div class="success-process-bar" style="width: 75%; background-color: rgb(0,200,83);">75%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- 我的作品 -->
+          <div class="work">
+            <div class="title-text">
+              <h2>我的作品</h2>
+              <div class="text">我的HTML5网页作品</div>
+            </div>
+            <ul class="work-box">
+              <!-- 为每个li设置宽度，让第一个li有右外边距使他们有间距，设置宽高，设置边框，因为让他们水平显示，所以设置左浮动 -->
+              <li>
+                <!-- 宽度占满，高度为200像素 -->
+                <img src="images/banner.jpg" >
+                <!-- 下方文字部分，设置内边距 -->
+                <div class="work-box-text">
+                  <!-- 下方标题，设置文字颜色和文字大小 -->
+                  <p class="title"><a href="">XXX</a></p>
+                  <p>一个精美的网站作品</p>
+                </div>
+              </li>
+              <li>
+                <img src="images/banner.jpg" >
+                <div class="work-box-text">
+                  <p class="title"><a href="">XXX</a></p>
+                  <p>一个精美的网站作品</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 我的信息 -->
+        <!-- 设置文字颜色，设置背景颜色，清除浮动，设置文字大小 -->
+        <ul class="info">
+          <!-- 让三个li水平显示，所以设置左浮动，设置内边距，设置宽度为父元素的33.33%，设置文本居中 -->
+          <li>
+            <!-- 设置高度 -->
+            <img src="images/icon1.jpg" >
+            <!-- 设置上外边距 -->
+            <p>xxxxx</p>
+          </li>
+          <li>
+            <img src="images/icon2.jpg" >
+            <p>xxxx@qq.com</p>
+          </li>
+          <li>
+            <img src="images/icon3.jpg" >
+            <p>吉林省延边朝鲜族自治州</p>
+          </li>
+        </ul>
+        
+        <!-- 版权部分，设置内边距，设置文字颜色 -->
+        <footer>
+          Copyright © 2021.Company LiuHe All rights reserved.
+        </footer>
+      </div>
+    </div>
+    
+    <!-- 下方灰色的条，设置固定定位下方0像素，宽度占满网页，设置高度，设置背景颜色 -->
+    <div class="fixed-footer"></div>
+  </body>
+</html>

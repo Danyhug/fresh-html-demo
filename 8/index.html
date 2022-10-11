@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>张桑的个人主页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 网站头部 -->
+    <header>
+      <!-- 每个wrap都是一个盒子，作用是让盒子宽度为1200像素，水平居中 -->
+      <div class="wrap">
+        <!-- mine-img是我左侧的头像盒子，设置了高度，左浮动让文字在右边，设置右外边距让文字距离该图片有一些距离 -->
+        <div class="mine-img">
+          <!-- 图片继承父元素的高度 -->
+          <img src="images/my.jpg" alt="">
+        </div>
+        <!-- 这个是头部内容盒子，主要是为了左侧的文本，设置左浮动和图片并排 -->
+        <div class="header-content">
+          <!-- 这个是标题，内边距设置为20像素，距离顶部和底部一些距离，设置1像素的下边框，就是网页中的那个横线 -->
+          <div class="header-content-top">
+            <!-- 分别为h1和sub-h1设置字体大小和颜色 -->
+            <h1>My name is Fanbingbing</h1>
+            <sub class="sub-h1">平面设计师和网站建设人员</sub>
+          </div>
+          <!-- 这个是我的具体信息，设置行高是字体大小的2.2倍，让字竖着有一些距离，设置了上下18的内边距 -->
+          <div class="header-content-bottom">
+            <p>
+              <!-- 因为要给span设置宽度，所以设置display为inline-block，然后设置宽度，这样他们就不会有的长有的短了，然后设置字体加粗 -->
+              <span>出生日期</span>
+              09-16-1981
+            </p>
+            <p>
+              <span>出生日期</span>
+              09-16-1981
+            </p>
+            <p>
+              <span>出生日期</span>
+              09-16-1981
+            </p>
+            <p>
+              <span>出生日期</span>
+              09-16-1981
+            </p>
+            <p>
+              <span>名下企业</span>
+              冰冰影视传媒工作室
+            </p>
+            <p>
+              <span>出生日期</span>
+              09-16-1981
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 这个是主体部分 -->
+    <main>
+      <!-- 这个是中间水绿色的导航，因为li要设置浮动，所以这里需要清除浮动，然后设置了背景颜色 -->
+      <nav>
+        <!-- 这个设置了宽度900像素，水平垂直屏幕 -->
+        <ul class="nav">
+          <!-- 因为共有五个子元素，让他们占满整个盒子，所以设置宽度为父元素的20%，左浮动让他们在同一行，文字居中 -->
+          <!-- 让每一个a标签占满父元素，所以设置display为block，文字颜色为#FFF也就是白色，设置行高为50像素撑起父盒子高度 -->
+          <!-- 为每个a的hover伪类设置文字颜色和背景颜色改变 -->
+          <li><a href="">关于我</a></li>
+          <li><a href="">教育背景</a></li>
+          <li><a href="">专业技能</a></li>
+          <li><a href="">部分作品</a></li>
+          <li><a href="">联系我</a></li>
+        </ul>
+      </nav>
+
+      <!-- 关于我 -->
+      <!-- section是另一种形式的div，因为这个元素有标题所以选用section -->
+      <!-- 因为要用到浮动，所以让他们清楚浮动，上下内边距80像素空出距离 -->
+      <section class="about">
+        <div class="wrap">
+          <!-- 设置下内边距14像素，和文字有间隙，设置底边框为4像素 双线，让下面有那个黄色的线 -->
+          <h2>关于我</h2>
+          <!-- 这个是左侧关于我下面的盒子，设置内边距和宽度，行高为1.8倍字体大小，设置文字大小和颜色，text-indent文本缩进为两个文字大小 -->
+          <div class="about-left">
+            <p>
+              具有较强的用户研究、市场分析能力，对中国用户的社会形态、生活方式有丰富的认识和独特的见解;对色彩、材质感觉细腻而敏感，具有色彩、材质、表面处理的研究和趋势分析能力，对当代中国的色彩具有深入的理解和自己的观点;能够准确把握社会文化、流行趋势，对中国现代社会及传统文化背景有仔细的研究和深刻的理解;对设计工作充满热情，有较强的设计能力，设计的产品范围广泛。
+            </p>
+            <p>
+              熟悉服装制作的基础知识，懂得人体结构理论，对服装面料，辅料性质有足够的认识，精通服装制作过程及工艺、成本构成。熟悉服装企业的接单报价排单流程，生产排期流程，制作工艺流程，验货程序标准等。手绘功底深，工作积极性高，为人热情，乐于助人，沟通能力较强，拥有创新思维、有团队精神并能承受较大的工作压力。
+            </p>
+            <p>
+              拥有多年的工业设计经验，经过时间的积累和沉淀已经有了自己的设计技巧和风格，性格低调，比较细心，责任感强，有进取心，诚实可靠。有很强的团队合作意识和一定的领导能力，具有良好的手绘能力,思维敏锐，学习能力、表达能力出众。
+            </p>
+          </div>
+          <!-- 这个是右边的盒子，让边框为3像素双线，设置宽高文字大小，文字行高，字体大小，因为要和左侧盒子横着排列，所以左浮动 -->
+          <div class="about-right">
+            <!-- 这个是右边盒子的标题,设置外边距字体颜色和大小 -->
+            <span class="title">荣誉证书</span>
+            <!-- 这个是下方的列表,让文字左对齐 -->
+            <ul>
+              <!-- 为li使用after伪元素，让他们前面有个>符号，设置content为>，设置字体大小和颜色，设置外边距大小，文字加粗 -->
+              <li>河南工业大学专科学历</li>
+              <li>河南工业大学专科学历</li>
+              <li>河南工业大学专科学历</li>
+              <li>河南工业大学专科学历</li>
+              <li>.....................................</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 教育背景 -->
+      <!-- 这个设置了背景颜色为黑色,设置字体大小和文字颜色 -->
+      <section class="my-edu">
+        <!-- 这个设置为相对定位 -->
+        <div class="wrap">
+          <!-- 这个是中间的那个线，设置他为绝对定位，距离左侧50%，让他水平居中，手动调整他的高度 -->
+          <!-- 设置宽度和高度，以及他的背景颜色 -->
+          <div class="line"></div>
+          <!-- 标题 -->
+          <h2>教育背景</h2>
+          <div class="my-edu-list">
+            <div class="edu-list-item">
+              <!-- 设置左侧的时间 设置内边距撑开，绝对定位于左侧30%的距离 -->
+              <div class="degree left">
+                Master Degree - 2010
+              </div>
+              <!-- 中间的图标，设置为行内块级，设置宽高圆角背景颜色，绝对定位左侧50%的距离，溢出部分隐藏 -->
+              <div class="icon"><img src="images/edu-icon.jpg"></div>
+              <!-- 右侧的学校，相对于右侧-5%的距离 -->
+              <div class="school right">
+                <span class="school-name">河南工业大学</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam
+                  rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                  explicabo</p>
+              </div>
+            </div>
+
+            <div class="edu-list-item">
+              <div class="degree right">
+                Master Degree - 2010
+              </div>
+              <div class="icon"><img src="images/edu-icon.jpg"></div>
+              <div class="school left">
+                <span class="school-name">河南工业大学</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam
+                  rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                  explicabo</p>
+              </div>
+            </div>
+
+            <div class="edu-list-item">
+              <div class="degree left">
+                Master Degree - 2010
+              </div>
+              <div class="icon"><img src="images/edu-icon.jpg"></div>
+              <div class="school right">
+                <span class="school-name">河南工业大学</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam
+                  rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                  explicabo</p>
+              </div>
+            </div>
+
+            <div class="edu-list-item">
+              <div class="degree right">
+                Master Degree - 2010
+              </div>
+              <div class="icon"><img src="images/edu-icon.jpg"></div>
+              <div class="school left">
+                <span class="school-name">河南工业大学</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam
+                  rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                  explicabo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 专业技能 -->
+      <section class="skill">
+        <div class="wrap">
+          <h2>专业技能</h2>
+          <!-- 为li设置左浮动，每个li宽度为50%，所以一行会有两个 -->
+          <ul class="skill-items">
+            <li class="skill-item">
+              <!-- 上面的问题 -->
+              <p>WEB DESIGN</p>
+              <!-- 进度条，设置圆角宽高，隐藏溢出部分 -->
+              <div class="skill-progress-bar">
+                  <!-- 已完成的进度条，为他的子元素，覆盖在父元素的上面，所以会有进度条的感觉，设置了宽，高度继承父元素 -->
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+            <li class="skill-item">
+              <p>WEB DESIGN</p>
+              <div class="skill-progress-bar">
+                <div class="skill-success-progress-bar"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 作品 -->
+      <section class="works">
+        <div class="wrap">
+          <h2>我的作品</h2>
+          <!-- 设置上外边距，隐藏溢出部分 -->
+          <ul class="works-items">
+            <!-- 先设置左浮动，因为要设置为一行三个，所以每个li的宽度都是33.33%，设置内边距分开每个元素 -->
+            <li class="works-item">
+              <!-- 高度继承li，中线对齐 -->
+              <img src="images/g1.jpg">
+            </li>
+            <li class="works-item"><img src="images/g2.jpg"></li>
+            <li class="works-item"><img src="images/g3.jpg"></li>
+            <li class="works-item"><img src="images/g4.jpg"></li>
+            <li class="works-item"><img src="images/g5.jpg"></li>
+            <li class="works-item"><img src="images/g6.jpg"></li>
+            <li class="works-item"><img src="images/g7.jpg"></li>
+            <li class="works-item"><img src="images/g8.jpg"></li>
+            <li class="works-item"><img src="images/g9.jpg"></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 联系我们 -->
+      <section class="contact">
+        <div class="wrap">
+          <h2>联系我们</h2>
+          <div class="contact-content">
+            <!-- 左浮动图片，设置右外边距 -->
+            <div class="contact-left">
+              <img src="images/contact.jpg">
+            </div>
+            <!-- 右侧文字，设置宽度，左浮动，设置内边距 -->
+            <div class="contact-right">
+              <div class="contact-right-text">
+                  <span>北京朝阳区赵九路风景线,中国</span>
+                  <!-- i是中间的竖线，设置了高度和1px的宽度，设置背景颜色 -->
+                  <i></i>
+                  <div class="contact-text-right">
+                    <span>电话 : 1500008888</span>
+                    <br>
+                    <span>E-mail : fm185@sina.com</span>
+                  </div>
+              </div>
+              <!-- 为表单的input和textare设置了宽高，文字大小，左内边距 -->
+              <form action="">
+                <input type="text" name="" id="" value="Name" />
+                <input type="text" name="" id="" value="Email" />
+                <input type="text" name="" id="" value="Phone" />
+                <textarea rows="" cols="">Message</textarea>
+                <!-- 设置宽高，文字居中，行高等于高度，文字颜色，背景颜色 -->
+                <button type="button">提交</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 设置背景颜色，文字颜色，文字居中 -->
+    <footer>
+      <p class="copyright">©2018我的简历。所有权利保留|设计的</p>
+    </footer>
+  </body>
+</html>

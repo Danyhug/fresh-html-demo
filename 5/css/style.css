@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+h2 {font-size: 22px;}
+
+body {
+  font-size: 14px;
+}
+
+.header-container {
+  height: 625px;
+  color: #FFF;
+  background: url(../images/cc-bg-1.jpg) no-repeat;
+  background-size: cover;
+}
+.header-container > header,
+.header-container > .banner {
+  position: relative;
+  z-index: 2;
+}
+.header-container::before {
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  content: "";
+}
+.header-container a {
+  color: #FFF;
+}
+
+/* 头部 */
+header {
+  margin: 0 auto;
+  width: 1200px;
+  height: 70px;
+  line-height: 70px;
+}
+header > span {
+  width: 100px;
+  float: left;
+}
+.nav {
+  float: right;
+}
+.nav > li {
+  margin: 0 5px;
+  float: left;
+}
+.nav > li a {
+  padding: 12px 8px;
+  border-radius: 5px;
+}
+.nav > li a:hover {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+/* 头部中间 */
+.banner {
+  padding: 50px 0;
+}
+.banner > .banner-img {
+  margin: 30px auto;
+  width: 180px;
+}
+.banner-img > img {
+  width: inherit;
+  border-radius: 50%;
+}
+.banner-content {
+  text-align: center;
+  line-height: 2;
+}
+.banner-func > a {
+  margin: 16px 8px;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(55,140,63);
+  border-radius: 4px;
+}
+.banner-func > a:hover {
+  background-color: rgb(64,162,73);
+}
+
+/* 中间主体 */
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+main > div {
+  margin: 70px 0;
+}
+
+/* 中间头部 */
+.top {
+  padding: 25px;
+  color: rgb(44, 44, 44);
+  box-shadow: -4px 4px 16px #ccc;
+  overflow: hidden;
+}
+.top > section {
+  width: 500px;
+  padding-right: 50px;
+  float: left;
+}
+.top-left {
+  margin-right: 50px;
+}
+.top-left-content > p {
+  margin: 20px 0;
+}
+.top-left-content a {
+  color: #378C3F;
+}
+.top-left-content a:hover {
+  text-decoration: underline;
+}
+/* 右侧 */
+.top-right {
+  
+}
+.top-right-content > p {
+  margin: 20px 0;
+}
+.top-right-content > p > span:first-child {
+  font-weight: bold;
+  display: inline-block;
+  width: 200px;
+}
+
+/* 中间技能 */
+.middle {
+}
+.middle > h2 {
+  text-align: center;
+  margin: 100px 0 30px 0;
+}
+.professional-skills {
+  padding: 25px;
+  color: #378C3F;
+  box-shadow: -4px 4px 16px #ccc;
+  overflow: hidden;
+}
+.professional-skills > li {
+  width: 540px;
+  padding: 0 15px;
+  float: left;
+  position: relative;
+}
+.professional-skills > li > span {
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+.professional-skills > li > .progress-bar {
+  margin: 18px 0;
+  height: 6px;
+  background-color: rgb(175,209,178);
+}
+.professional-skills > li > .progress-bar > .progress-success-bar {
+  height: inherit;
+  background-color: rgb(55,140,63);
+}
+
+/* 图片 */
+.pic {
+  overflow: hidden;
+}
+.pic > h2 {
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+.pic > div {
+  margin: 6px 0;
+  float: left;
+  width: 50%;
+}
+.pic > div > img {
+  width: 576px;
+  box-shadow: 0 6px 10px 0 #ccc;
+}
+
+/* 教育经历 */
+.edu {
+  width: 1200px;
+}
+.edu > h2 {
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+.edu-box {
+  height: 250px;
+  box-shadow: 0 0 14px 0 #ccc;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.edu-box > div {
+  float: left;
+  height: inherit;
+}
+.edu-box-left {
+  width: 310px;
+  color: #FFF;
+  text-align: center;
+  background-color: rgb(55,140,63);
+  line-height: 3.2;
+}
+.edu-box-left > span {
+  display: inline-block;
+  margin-top: 65px;
+}
+.edu-box-left > p {
+  font-size: 18px;
+}
+.edu-box-right {
+  width: 890px;
+  line-height: 1.5;
+  background-color: #FFF;
+}
+.edu-box-right > .title {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.edu-box-right > .sub-title {
+  margin-left: 30px;
+  color: #9A9A9A;
+  font-weight: bold;
+}
+.edu-box-right > .text {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+footer {
+  padding-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+.copyright {
+  margin-top: 10px;
+  color: #666;
+}

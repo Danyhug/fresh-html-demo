@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h2 {
+  width: 100px;
+  margin: 30px auto;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  margin: 6px auto;
+  width: 50px;
+  height: 2px;
+  background-color: rgb(46, 204, 113);
+}
+
+.wrap,
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 18px;
+  background-color: rgb(239, 239, 239);
+}
+
+header {
+  padding: 30px 0;
+  text-align: center;
+}
+
+header img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+/* 导航 */
+nav {
+  font-size: 18px;
+  background-color: rgb(37, 46, 48);
+  margin-bottom: 30px;
+}
+
+.nav {
+  width: 600px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
+.nav>li {
+  width: 200px;
+  float: left;
+  text-align: center;
+}
+
+.nav>li a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.nav>li a:hover {
+  color: rgb(46, 204, 113);
+}
+
+.info-banner {
+  background: url(../images/img1.jpg) no-repeat right;
+  background-size: 150px;
+}
+
+.info {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px 20px;
+  position: relative;
+  border: 2px solid #666;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.info::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.info>.line {
+  padding: 0;
+  position: absolute;
+  left: 49%;
+  top: 26px;
+  display: block;
+  height: 130px;
+  width: 2px;
+  background-color: #111;
+}
+
+.info>div {
+  padding: 16px 0;
+  float: left;
+  width: 50%;
+}
+
+.info .title {
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  display: inline-block;
+  border-bottom: 2px solid #666;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-left>.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 2px solid #666;
+}
+
+.info-right {}
+
+.info-right>.title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 2px solid #666;
+}
+
+.right-text {
+  padding-left: 50px;
+  text-indent: 2em;
+}
+
+
+main>div {
+  padding: 30px 0;
+}
+
+.culture>div {
+  margin-bottom: 20px;
+}
+
+.wrap-one {
+  overflow: hidden;
+}
+
+.wrap-one img {
+  width: 500px;
+  margin-right: 50px;
+  float: left;
+}
+
+.wrap-text {
+  padding: 10px 20px;
+}
+
+.wrap-two {}
+
+.wrap-two img {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.wrap-two-text {
+  padding: 16px 8px;
+}
+
+footer {
+  height: 60px;
+  background-color: rgb(67, 74, 84);
+}

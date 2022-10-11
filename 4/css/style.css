@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {text-decoration: none;}
+ul {list-style: none;}
+h1 {font-size: 50px; font-weight: normal; position: relative}
+h2 {font-size: 36px; font-weight: normal;}
+h2 > p {
+  font-size: 18px;
+  color: #666;
+}
+h1 > span {
+  color: rgb(10,117,176);
+  position: relative;
+  z-index: 2;
+}
+body {
+  font-size: 16px;
+  background-color: #ccc;
+}
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(181,214,236, .8);
+  border-radius: 50%;
+  z-index: 1;
+}
+.circle-top-left {
+  top: -80px;
+  left: -60px;
+}
+.circle-bottom-center {
+  bottom: -80px;
+  right: 50%;
+}
+.circle-top-right {
+  top: -60px;
+  right: -50px;
+}
+.circle1 {
+  right: 114px;
+  top: 12px;
+  width: 50px;
+  height: 50px;
+}
+.circle-work1 {
+  top: 150px;
+  left: -80px;
+}
+.circle-work2 {
+  top: 30px;
+  right: 60px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container > section {
+  position: relative;
+  overflow: hidden;
+  background-color: #FFF;
+  border-bottom: 1px solid #ccc;
+}
+
+.mine {
+  height: 600px;
+}
+.mine > div {
+  height: inherit;
+  float: left;
+}
+.mine-left {
+  width: 600px;
+  text-align: center;
+}
+.mine-left > h1 {
+  margin-top: 260px;
+  margin-bottom: 16px;
+}
+.mine-left > .sub-h1 {
+  color: #666;
+  letter-spacing: 4px;
+}
+/* 右侧 */
+.mine-right {
+  position: relative;
+  text-align: center;
+  width: 400px;
+}
+.mine-right > .cubuid {
+  position: absolute;
+  top: 0;
+  left: 104px;
+  z-index: -1;
+  width: 200px;
+  height: inherit;
+  background-color: rgb(1,114,194);
+}
+.mine-right img {
+  margin-top: 100px;
+  width: 300px;
+  
+}
+
+.nav-container {
+  padding: 60px 0;
+  height: 300px;
+  position: relative;
+}
+.nav-container > h2 {
+  margin-left: 50px;
+}
+/* 列表项 */
+.nav > li {
+  margin: 16px 0;
+  width: 50%;
+  float: left;
+  font-size: 24px;
+  text-align: center;
+}
+.nav > li a {
+  display: block;
+  color: #000000;
+}
+/* 数字 */
+.nav > li span {
+  display: inline-block;
+  padding: 15px;
+  color: #FFF;
+  border-radius: 10px;
+  background-color: rgb(127,127,127);
+}
+.nav > li:nth-of-type(n+3) span {
+  background-color: rgb(8,114,192);
+}
+
+/* 个人信息 */
+.my-detail {
+  padding: 40px 100px;
+}
+.my-detail img {
+  padding: 10px;
+  margin-right: 50px;
+  float: left;
+  width: 200px;
+  border: 1px dotted goldenrod;
+}
+.detail-text {
+  color: #333;
+  line-height: 2;
+}
+.detail-text span {
+  color: #000;
+}
+
+/* 爱好 */
+.love {
+  height: 280px;
+  padding: 50px 0;
+}
+.love > h2 {
+  margin-left: 30px;
+}
+.love-items {
+  width: 500px;
+  margin: 80px auto;
+}
+.love-items > .love-item {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.love-items > .love-item > .item-img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.love-items > .love-item img {
+  width: 100%;
+}
+
+/* 我的作品 */
+.work {
+  position: relative;
+  height: 280px;
+  padding: 50px 0;
+}
+.work > h2 {
+  margin-left: 30px;
+}
+.work ul {
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.work li {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.work a {
+  color: #333;
+}
+.work .page {
+  margin: 0 12px;
+}
+.work .page:hover {
+  text-decoration: underline;
+  color: #666;
+}
+.work .number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: rgb(228,108,11);
+}
+
+/* 个人评价 */
+.asses {
+  padding: 30px 0;
+  height: 300px;
+  position: relative;
+}
+.asses > h2 {
+  margin-left: 30px;
+}
+.asses-text {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 18px;
+  text-indent: 2em;
+  line-height: 2;
+}
+
+.fixed-btn {
+  padding: 6px 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  font-size: 26px;
+  background-color: #FFF;
+}
+.fixed-btn > a {
+  color: #333;
+}

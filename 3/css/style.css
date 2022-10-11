@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {text-decoration: none;}
+h2 {font-size: 22px; font-weight: normal;}
+ul {list-style: none;}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+body {
+  font-size: 14px;
+  color: rgba(0,0,0,.54);
+}
+.wrap > div {
+  margin: 30px 0;
+  border-radius: 4px;
+}
+
+header {
+  height: 225px;
+  background-color: rgb(63,81,181);
+  text-align: center;
+  color: #FFF;
+}
+h1 {
+  margin: 30px 0 10px 0;
+  display: inline-block;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+h1 > img {
+  margin-top: -10px;
+  width: inherit;
+}
+
+nav {
+  background-color: rgb(58,75,167);
+  overflow: hidden;
+}
+.nav {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav > li {
+  width: 25%;
+  line-height: 50px;
+  float: left;
+}
+.nav > li a {
+  color: rgba(255, 255, 255, .8);
+}
+.nav > li a:hover {
+  color: #FFF;
+}
+
+/* 主要内容 */
+main {
+  background-color: #FFF;
+}
+
+/* 主要上头 */
+.top {
+  height: 445px;
+  box-shadow: 0 4px 10px 0 #bbb;
+  overflow: hidden;
+}
+.top-img {
+  height: 336px;
+  background: url(../images/cover.jpg) no-repeat center center ;
+  background-size: cover;
+  position: relative;
+}
+.top-img > h2 {
+  color: #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+.top > p {
+  padding: 18px 25px;
+  border-bottom: 1px solid rgb(229,229,229);
+}
+main a {
+  display: inline-block;
+  margin: 4px 20px;
+  padding: 10px 16px;
+  color: rgb(255,64,129);
+}
+main a:hover {
+  background-color: rgb(236,236,236);
+}
+
+/* 中间 */
+.middle {
+  height: 210px;
+}
+.middle > div {
+  height: inherit;
+  float: left;
+}
+.middle-img {
+  width: 230px;
+  margin-right: 20px;
+  background-color: rgb(178,223,219);
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 #aaa;
+  overflow: hidden;
+}
+.middle-img > img {
+  margin-top: -30px;
+  width: inherit;
+}
+.middle-content {
+  width: 750px;
+  background-color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 #aaa;
+}
+.middle-content h2 {
+  color: #000;
+  margin: 20px 0 20px 20px;
+}
+.middle-content p {
+  padding: 10px 50px 20px 20px;
+  border-bottom: 1px solid rgb(229,229,229);
+}
+.middle-content b {
+  color: #333;
+  line-height: 36px;
+  margin-left: 16px;
+}
+
+/* 下面 */
+.bottom {
+}
+.bottom-lists {
+}
+.bottom-lists::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.bottom-lists > .bottom-list {
+  margin-right: 17px;
+  width: 322px;
+  float: left;
+  box-shadow: 0 3px 6px 0 #aaa;
+}
+.bottom-lists > .bottom-list:last-child {
+  margin-right: 0;
+}
+.bottom-list > .bottom-list-img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.bottom-lists > .bottom-list img {
+  width: inherit;
+}
+.bottom-list > .bottom-list-text {
+  height: 180px;
+}
+.bottom-list > .bottom-list-text > h2 {
+  color: #000;
+}
+.bottom-list-text > h2,
+.bottom-list-text > p {
+  margin: 20px;
+  color: rgba(0,0,0,.54);
+}
+
+.btn {
+  margin: 40px 0;
+  text-align: center;
+}
+.btn > a {
+  color: #FFF;
+  background-color: rgb(255,64,129);
+  box-shadow: 0 3px 2px 0 #aaa;
+}
+.btn > a:hover {
+  color: rgb(255,64,129);
+  background-color: #FFF;
+}
+
+/* 底部其他 */
+.bottom-other {
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+.bottom-other-left,
+.bottom-other-right {
+  height: 300px;
+  float: left;
+}
+
+/* 左侧的小模块 */
+.wrap > .bottom-other-left {
+  padding: 0 20px;
+  margin-right: 20px;
+  width: 615px;
+  background-color: rgb(255,255,255);
+  box-shadow: 0 3px 6px 0 #aaa;
+}
+.bottom-other-left > h2 {
+  margin-top: 30px;
+  color: #000;
+}
+.bottom-other-left-content {
+  margin: 40px 0;
+  overflow: hidden;
+}
+.bottom-other-left-content > div {
+  float: left;
+}
+.bottom-other-left-content-div {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(117,117,117);
+  overflow: hidden;
+}
+.bottom-other-left-content-div > img {
+  width: inherit;
+}
+.bottom-other-left-content-text {
+  width: 545px;
+}
+.bottom-other-left-content-text > .content-title {
+  font-size: 15px;
+  color: #000;
+}
+
+/* 右侧 */
+.bottom-other-right {
+  width: 325px;
+  color: #FFF;
+  background-color: rgb(62,78,184);
+  box-shadow: 0 4px 6px 0 #ccc;
+}
+/* 底部右侧标题 */
+.bottom-other-right-title {
+  height: 210px;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.bottom-other-right-bottom > a {
+  color: #FFF;
+}
+.bottom-other-right-bottom > a:hover {
+  background-color: rgb(82,94,179);
+}
+.bottom-other-right-bottom > span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px 0 0 104px;
+  font-size: 24px;
+}
+
+/* 底部 */
+footer {
+  padding: 30px 0 10px 0;
+  color: #FFF;
+  text-align: center;
+  background-color: rgb(66,66,66);
+}
+footer a {
+  margin: 0 10px;
+  color: #999;
+}

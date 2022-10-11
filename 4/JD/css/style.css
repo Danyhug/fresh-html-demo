@@ -1,0 +1,129 @@
+@charset "utf-8";
+* {padding: 0; margin: 0;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+li {list-style: none;}
+h1 {}
+header, .wrapper, footer {
+  width: 990px;
+  margin: 0 auto;
+}
+
+header {
+  height: 70px;
+  padding: 5px 0;
+}
+header img {
+  height: 60px;
+  vertical-align: middle;
+}
+header > h1 > span {
+  display: inline-block;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #666;
+  margin: 0 20px;
+}
+
+main {
+  background-color: rgb(233, 56, 84);
+}
+main > .wrapper {
+  height: 475px;
+  background: url(../image/banner.png) no-repeat;
+  background-size: 100% auto;
+}
+.login-wrapper {
+  float: right;
+  margin-top: 40px;
+  width: 360px;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.login-wrapper > .login-title {
+  overflow: hidden;
+}
+.login-wrapper > .login-title > h2 {
+  float: left;
+  color: #666;
+  font-weight: normal;
+  font-size: 18px;
+}
+.login-wrapper > .login-title > a {
+  float: right;
+  padding-left: 20px;
+  font-size: 14px;
+  color: rgb(228, 57, 60);
+  background: url(../image/icon5.jpg) no-repeat left center;
+}
+
+.login-wrapper > .login-func {
+  font-size: 14px;
+  color: #666;
+}
+.login-wrapper > .login-func a {
+  float: right;
+  color: #666;
+}
+.login-wrapper > .login-func input {
+  vertical-align: middle;
+}
+
+.login-wrapper > form p {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+.login-wrapper > form p > i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+}
+.login-wrapper > form p:first-child > i {
+  background: url(../image/icon1.jpg) no-repeat;
+}
+.login-wrapper > form p:last-child > i {
+  background: url(../image/icon2.jpg) no-repeat;
+}
+.login-wrapper > form input {
+  padding-left: 4px;
+  width: 280px;
+  height: 32px;
+  color: #999;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.login-wrapper > .login {
+  margin: 10px 0;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(228, 57, 60);
+}
+.login-wrapper > .login:hover {text-decoration: none;}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+footer > .nav {
+  margin: 20px 0;
+}
+footer > .nav a {
+  color: #666;
+}
+footer > .nav a:hover {
+  color: rgb(228, 57, 60);;
+}
+footer > .nav > li {
+  display: inline-block;
+  margin: 0 6px;
+}

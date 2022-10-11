@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>何桑的个人主页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+    <!-- 头部，设置高度，设置背景颜色，内容居中，文字白色 -->
+    <header>
+      <!-- 设置外边距，设置为行内块级元素，让文字居中，设置宽高 -->
+      <!-- 设置圆角50%，让图片变成圆的，隐藏溢出部分 -->
+      <h1>
+        <!-- 头像，设置负外边距，让图片靠上 -->
+        <img src="images/logo.jpg" alt="">
+      </h1>
+      <p>xxxx的个人主页</p>
+    </header>
+    
+    <!-- 设置背景颜色，清除浮动 -->
+    <nav>
+      <!-- 设置宽度，设置水平居中，设置文字居中 -->
+      <ul class="nav">
+        <!-- 左浮动让li水平排列，设置行高，设置宽度为25% -->
+        <li><a href="#top">主页</a></li>
+        <li><a href="#middle">个人介绍</a></li>
+        <li><a href="#bottom">朋友评价</a></li>
+        <li><a href="#bottom-other">未来目标</a></li>
+      </ul>
+    </nav>
+    
+    <!-- 设置背景颜色为白色 -->
+    <main>
+      <!-- 每个wrap样式相同，设置宽度，设置水平居中 -->
+      <div class="wrap">
+        <!-- 上面大图片部分，设置上下外边距，设置圆角，设置高度 -->
+        <!-- 设置阴影 box-shadow：水平偏移 垂直偏移 模糊距离 模糊大小 颜色，清除浮动 -->
+        <div class="top" id="top">
+          <!-- 上面大图片，设置高度，设置背景图片，设置背景水平垂直居中 -->
+          <!-- 设置为相对定位 -->
+          <div class="top-img">
+            <!-- 下方的文字，设置文字颜色，设置为绝对定位，距离下方0像素，左侧25像素 -->
+            <h2>Welcome</h2>
+          </div>
+          <!-- 设置内边距，设置下边框 -->
+          <p>欢迎来到我的个人主页</p>
+          <!-- 设置行内块级元素，设置外边距 -->
+          <!-- 设置内边距，设置颜色 -->
+          <a href="">好的</a>
+        </div>
+        
+        <!-- 中间介绍部分，设置外边距，设置圆角，设置高度 -->
+        <div class="middle" id="middle">
+          <!-- 左浮动，左侧图片，设置宽度，设置圆角，设置阴影，隐藏溢出部分 -->
+          <div class="middle-img">
+            <!-- 设置负上外边距，让图片向上移，宽度继承父元素 -->
+            <img src="images/middle.jpg" >
+          </div>
+          <!-- 右侧文字部分，高度继承，左浮动，设置宽度，设置背景颜色，设置圆角 -->
+          <!-- 设置阴影 -->
+          <div class="middle-content">
+            <!-- 设置文字颜色，设置外边距，设置文字大小，取消文字加粗 -->
+            <h2>个人介绍</h2>
+            <!-- 设置内边距，设置下边框 -->
+            <p>年龄：19
+            <!-- 使用br换行 -->
+            <br>生日：8月23日<br>星座：处女座<br>爱好：篮球 乒乓球 游戏 唱歌</p>
+            <!-- 设置文字大小，设置行高，设置左外边距距离左侧有具体 -->
+            <b>"须知少时凌云志，曾许人间第一流。"</b>
+          </div>
+        </div>
+        
+        <!-- 下方三个图片，设置上下外边距，设置圆角 -->
+        <div class="bottom" id="bottom">
+          <!-- 清除浮动 -->
+          <ul class="bottom-lists">
+            <!-- 左浮动，设置右外边距，设置宽度，设置阴影 -->
+            <li class="bottom-list">
+              <!-- 上方图片，设置宽高 -->
+              <div class="bottom-list-img">
+                <!-- 宽度继承 -->
+                <img src="images/bottom1.jpg" alt="">
+              </div>
+              <!-- 设置高度 -->
+              <div class="bottom-list-text">
+                <!-- 设置文字颜色，设置外边距 -->
+                <h2>我最喜欢的球星</h2>
+                <!-- 设置外边距，设置文字颜色 -->
+                <p>勒布朗·詹姆斯（LeBron James），全名勒布朗·雷蒙·詹姆斯（LeBron Raymone James），1984年12月30日出生于美国俄亥俄州阿克伦，美国职业篮球运动员，司职小前锋，绰号“小皇帝”（King James），效力于NBA洛杉矶湖人队。</p>
+              </div>
+            </li>
+            <li class="bottom-list">
+              <div class="bottom-list-img">
+                <img src="images/bottom2.jpg" alt="">
+              </div>
+              <div class="bottom-list-text">
+                <h2>我的家属</h2>
+                <p>如果以后没有什么牵挂的话，干脆就搬到一条小巷子里。开一家杂货店，卖什么都好，再养一只猫。下午的时候，坐在门口，给自己泡一壶浓茶，摸着腿上的猫，听着邻居们闲扯家常，等待日落于地平线的时候就一起回家。</p>
+              </div>
+            </li>
+            <li class="bottom-list">
+              <div class="bottom-list-img">
+                <img src="images/bottom3.jpg" alt="">
+              </div>
+              <div class="bottom-list-text">
+                <h2>我最喜欢的小说</h2>
+                <p>《三体》是刘慈欣创作的系列长篇科幻小说，作品讲述了地球人类文明和三体文明的信息交流、生死搏杀及两个文明在宇宙中的兴衰历程。</p>
+              </div>
+            </li>
+          </ul>
+          <!-- 每个类名btn样式相同，设置上下外边距，设置文字居中 -->
+          <div class="btn">
+            <a href="JD/index.html">网页作品</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 底部其他 -->
+      <!-- 设置背景颜色，清楚浮动 -->
+      <div class="bottom-other" id="bottom-other">
+        <div class="wrap">
+          <!-- 左侧部分 -->
+          <!-- 设置外边距内边距，设置宽度，设置背景颜色，设置阴影，设置圆角 -->
+          <!-- 左浮动，设置高度 -->
+          <div class="bottom-other-left">
+            <!-- 设置上外边距，设置文字颜色 -->
+            <h2>朋友评价</h2>
+            <!-- 设置上下外边距，清除浮动 -->
+            <div class="bottom-other-left-content">
+              <!-- 左侧头像，设置左浮动 -->
+              <!-- 设置宽高，设置右外边距，设置圆角 -->
+              <div class="bottom-other-left-content-div">
+                <img src="images/1.jpg" alt="">
+              </div>
+              <!-- 左浮动，设置宽度 -->
+              <div class="bottom-other-left-content-text">
+                <!-- 设置文字大小，设置颜色 -->
+                <p class="content-title">乐于助人，为人友善，积极帮助同学和老师，做事认真负责，有上进心！</p>
+                <p>xxxx，优秀团员</p>
+              </div>
+            </div>
+            <div class="bottom-other-left-content">
+              <div class="bottom-other-left-content-div">
+                <img src="images/2.jpg" alt="">
+              </div>
+              <div class="bottom-other-left-content-text">
+                <p class="content-title">热爱学习，做事一丝不苟，有毅力，能吃苦，能克服困难，很优秀！</p>
+                <p>xxx，宿舍长，优秀团员</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 设置外边距，设置圆角，设置宽度，设置文字颜色，设置背景颜色，设置阴影 -->
+          <div class="bottom-other-right">
+            <!-- 上方文字，设置高度，设置内边距，设置下边框 -->
+            <div class="bottom-other-right-title">
+              <h2>
+                未来目标:
+                <br>
+                1、努力学习通过考试
+                <br>
+                2、找到自己喜欢的工作
+                <br>
+                3、存钱买车买房
+              </h2>
+            </div>
+            <div class="bottom-other-right-bottom">
+              <!-- 设置文字颜色，设置为行内块级，因为要设置内边距，设置外边距 -->
+              <a href="">冲冲冲！</a>
+              <!-- 设置文字大小，设置外边距，设置行内块级元素 -->
+              <span>加油！</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 设置内边距，设置文字颜色，设置文字居中，设置背景颜色 -->
+    <footer>
+      <p class="copyright">
+        Copyright © 2021.Company HeyueHui All rights reserved.
+        <a href="">ZZF4 & Team</a>
+      </p>
+    </footer>
+	</body>
+</html>

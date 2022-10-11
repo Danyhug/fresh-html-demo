@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>郝桑的个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    <!-- 头部div，因为要有个背景占满网页，子元素宽度固定，所以要加它 -->
+    <!-- 设置了高度和文字颜色，设置了背景颜色，在before伪类上写了一个半透明遮罩 -->
+    <!-- 绝对定位于body，上左0像素 -->
+    <div class="header-container">
+      <!-- 修改了层叠顺序，因为修改z-index需要定位，所以写了position:relative -->
+      <!-- 宽度1200像素，水平居中，行高70，高度70 -->
+      <header>
+        <!-- 左侧的文字，因为需要在左侧，所以写了左浮动 -->
+        <span>CREATIVE CV</span>
+        <!-- 右侧的导航，右浮动 -->
+        <ul class="nav">
+          <!-- 要让li横向排列，所以写了左浮动，左右外边距为5像素 -->
+          <!-- 为里面的a标签填充了内边距，让盒子撑起来，定义了圆角为5像素 -->
+          <!-- 正常看不出圆角，但是鼠标划到元素上触发hover伪类可以看出 -->
+          <!-- hover是一个半透明的白色的背景 -->
+          <!-- 使用锚点让每点一个导航切换一个栏目 -->
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#pic">PORTFOLIO</a></li>
+          <li><a href="#edu">EXPERIENCE</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+      </header>
+      <!-- 定义了上外边距，让他和上面有一些距离 -->
+      <div class="banner">
+        <!-- 头像的父盒子，设置了宽度，外边距auto水平居中 -->
+        <div class="banner-img">
+          <!-- 宽度继承父元素，定义圆角为50% -->
+          <img src="images/my.jpg" >
+        </div>
+        <!-- 头像下方的文字，文字居中盒子，行高为2倍字体大小 -->
+        <div class="banner-content">
+          <h1>Anthony Barnett</h1>
+          <h5>WEB DEVELOPER, GRAPHIC DESIGNER, PHOTOGRAPHER</h5>
+          <!-- 下方的两个绿色按钮 -->
+          <div class="banner-func">
+            <!-- 定义了外边距，让他上下左右都有一些距离，定义他为行内块级元素，因为两个a元素需要并列且要设置宽高 -->
+            <!-- 定义了宽高，定义行高为高度，让他垂直居中，然后让他水平居中，设置背景颜色，设置圆角大小为4像素 -->
+            <a href="">Hire Me</a>
+            <a href="">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 中间主体部分，设置宽度，水平居中 -->
+    <main>
+      <!-- 上方的关于，设置内边距让四角有距离，设置文字颜色，设置阴影 -->
+      <!-- 阴影参数：X轴偏移 Y轴偏移 阴影扩散区域 阴影大小 阴影颜色 -->
+      <!-- 因为里面的元素浮动，所以清除了浮动，设置了上外边距为70像素 -->
+      <!-- 因为触发了块级上下文（BFC）的原因导致外边距重合 -->
+      <div class="top" id="about">
+        <!-- 左侧的文字，设置了宽度为500像素，右内边距为50像素，左浮动 -->
+        <section class="top-left">
+          <!-- 设置了字体大小 -->
+          <h2>About</h2>
+          <!-- 左侧下方文字 -->
+          <!-- 为里面的p标签设置了上下外边距，让他们有间距 -->
+          <div class="top-left-content">
+            <p>Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.</p>
+            <p>Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience.
+            <a href="">Learn More</a>
+            </p>
+          </div>
+        </section>
+        <!-- 右侧的文字，宽度为500，右浮动，左500，右500，父元素为1200，所以中间有200像素的间距 -->
+        <section class="top-right">
+          <!-- 和上面一样 -->
+          <h2>Basic Information</h2>
+          <!-- 右侧下方文字 -->
+          <div class="top-right-content">
+            <!-- 用p元素换行 -->
+            <!-- 第一个span设置为行内块级元素，设置了宽度，为了让左侧对齐，设置了文字加粗 -->
+            <!--  -->
+            <p>
+              <span>AGE:</span>
+              <span>22</span>
+            </p>
+            <p>
+              <span>EMAIL:</span>
+              <span>anthony@company.com</span>
+            </p>
+            <p>
+              <span>PHONE:</span>
+              <span>+1718-111-0011</span>
+            </p>
+            <p>
+              <span>ADDRESS:</span>
+              <span>140, City Center, New York, U.S.A</span>
+            </p>
+            <p>
+              <span>LANGUAGE:</span>
+              <span>English, German, French</span>
+            </p>
+          </div>
+        </section>
+      </div>
+      
+      <!-- 中间 -->
+      <!-- 中间的技能部分，上下外边距为70像素 -->
+      <div class="middle" id="skill">
+        <!-- 上方标题，让文字居中，上300，下30像素 -->
+        <h2>Professional Skills</h2>
+        <!-- 下方的技能列表 -->
+        <!-- 设置了内边距让四边有距离，设置了文字颜色，设置了阴影，因为li要浮动，所以清楚浮动 -->
+        <ul class="professional-skills">
+          <!-- 左浮动，宽度为540像素，内边距为左右15像素，相对定位 -->
+          <li>
+            <!-- 上方标题 -->
+            <p>HTML</p>
+            <!-- 右侧文字，绝对定位，右16像素，上0像素 -->
+            <span>80%</span>
+            <!-- 下方进度条，设置上下外边距为18像素，高度为6像素，背景颜色 -->
+            <div class="progress-bar">
+              <!-- 里面的进度条，设置宽度为父元素的80%，设置背景颜色，高度继承父元素 -->
+              <div class="progress-success-bar" style="width: 80%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>HTML</p>
+            <span>80%</span>
+            <div class="progress-bar">
+              <div class="progress-success-bar" style="width: 81%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>HTML</p>
+            <span>80%</span>
+            <div class="progress-bar">
+              <div class="progress-success-bar" style="width: 50%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>HTML</p>
+            <span>80%</span>
+            <div class="progress-bar">
+              <div class="progress-success-bar" style="width: 0%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>HTML</p>
+            <span>80%</span>
+            <div class="progress-bar">
+              <div class="progress-success-bar" style="width: 10%;"></div>
+            </div>
+          </li>
+          <li>
+            <p>HTML</p>
+            <span>80%</span>
+            <div class="progress-bar">
+              <div class="progress-success-bar" style="width: 50%;"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- 图片 -->
+      <!-- 下方的四张图片，清楚浮动 -->
+      <div class="pic" id="pic">
+        <h2>Portfolio</h2>
+        <!-- 设置上外边距为6像素，每行两张图片，所以用浮动，设置了宽度为50% -->
+        <div class="pic1">
+          <!-- 写死了宽度，让他不占满父元素，看着和右侧有间距一样了，设置了阴影 -->
+          <img src="images/pic1.jpg" >
+        </div>
+        <div class="pic2">
+          <img src="images/pic2.jpg" >
+        </div>
+        <div class="pic3">
+          <img src="images/pic3.jpg" >
+        </div>
+        <div class="pic4">
+          <img src="images/pic4.jpg" >
+        </div>
+      </div>
+      
+      <!-- 介绍 -->
+      <!-- 下方的教育经历 -->
+      <div class="edu" id="edu">
+        <h2>Education</h2>
+        <!-- 每个盒子 -->
+        <div class="edu-box">
+          <!-- 盒子的左侧文字，设置了左浮动，高度继承 -->
+          <div class="edu-box-left">
+            <!-- 上边距60像素让他们有距离 -->
+            <span>2013-2015</span>
+            <!-- p是块级标签，所以会换行显示，设置了文字大小 -->
+            <p>Master's Degree</p>
+          </div>
+          <!-- 右侧文字区域，左浮动，高度继承，设置了宽度，设置了行高为1.5倍字号，设置了背景颜色 -->
+          <div class="edu-box-right">
+            <!-- 距离上左外边距距离，设置文字大小 -->
+            <p class="title">Master of Information Technology</p>
+            <!-- 设置副标题，设置加粗，设置左外边距，设置颜色 -->
+            <p class="sub-title">UNIVERSITY OF COMPUTER SCIENCE</p>
+            <!-- 下方文字，设置距离左右内边距30像素，距离上方外边距30像素 -->
+            <p class="text">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+        <div class="edu-box">
+          <div class="edu-box-left">
+            <span>2013-2015</span>
+            <p>Master's Degree</p>
+          </div>
+          <div class="edu-box-right">
+            <p class="title">Master of Information Technology</p>
+            <p class="sub-title">UNIVERSITY OF COMPUTER SCIENCE</p>
+            <p class="text">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+        <div class="edu-box">
+          <div class="edu-box-left">
+            <span>2013-2015</span>
+            <p>Master's Degree</p>
+          </div>
+          <div class="edu-box-right">
+            <p class="title">Master of Information Technology</p>
+            <p class="sub-title">UNIVERSITY OF COMPUTER SCIENCE</p>
+            <p class="text">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+        <div class="edu-box">
+          <div class="edu-box-left">
+            <span>2013-2015</span>
+            <p>Master's Degree</p>
+          </div>
+          <div class="edu-box-right">
+            <p class="title">Master of Information Technology</p>
+            <p class="sub-title">UNIVERSITY OF COMPUTER SCIENCE</p>
+            <p class="text">Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- 底部 -->
+    <!-- 文字居中 -->
+    <footer id="footer">
+      <h2>Anthony Barnett</h2>
+      <p class="copyright">Copyright © 2019.Company name All rights reserved.</p>
+    </footer>
+	</body>
+</html>

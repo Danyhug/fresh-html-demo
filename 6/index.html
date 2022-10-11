@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>王桑的个人主页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 定义了高度，文字颜色，背景图片，背景占满 -->
+    <header>
+      <!-- 半透明蒙版，让背景颜色不那么亮 -->
+      <div class="mask"></div>
+      <!-- 每个wrap都定义了宽度，水平居中，用一个额外的元素是因为外层元素要写背景 -->
+      <div class="wrap">
+        <!-- 头部上面部分，定义高度为60像素，行高为60像素让他们垂直居中， -->
+        <div class="header-top">
+          <!-- 左侧文字，加粗 -->
+          <span class="header-title">BARUNKA.</span>
+          <!-- 右侧导航，右浮动，设置文字大小 -->
+          <ul class="nav">
+            <!-- 让他水平显示，所以要左浮动，设置左右的外边距让他们之间有距离 -->
+            <!-- 将里面的a标签设置为行内块级元素，设置高度，设置行高，设置宽度，文字居中 -->
+            <li><a href="">HOME</a></li>
+            <li><a href="">TEXT PAGE</a></li>
+            <li><a href="">DROPDOWN</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- 中间的大文字 -->
+        <!-- 距离顶部200像素,文字居中,设置文字大小 -->
+        <div class="header-main">
+          <h1>Barunka</h1>
+          <p class="sub-h1">A multi-purpose Bootstrap template by Bootstrapious.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- 内容主体部分 -->
+    <main>
+      <!-- 上面的大文字部分,设置了背景颜色 -->
+      <section class="main-top">
+        <div class="wrap">
+          <!-- 文字内容部分 -->
+          <!-- 设置上下内边距100像素,让他们有距离,设置文字大小为20像素 -->
+          <div class="main-top-content">
+            <!-- 设置文字大小为50像素,设置下外边距为16像素 -->
+            <h2>Mauris placerat eleifend leo.</h2>
+            <!-- 默认样式 -->
+            <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac
+              dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
+              tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.</p>
+            <!-- 设置下方粉色的按钮,上外边距为25像素,设置他为行内块级元素,内边距为上下8像素,左右10像素,设置文字大小,设置文字加粗,设置文字颜色,设置边框 -->
+            <!-- 鼠标划上去时更改背景颜色和文字颜色 -->
+            <a href="" class="btn">CONTINUE READING</a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 中间的图片文字部分 -->
+      <section class="main-middle">
+        <div class="wrap">
+          <!-- 上方的两个图片,设置高度 -->
+          <div class="main-middle-top">
+            <!-- 上方的两个具体图片 -->
+            <!-- 设置右外边距为30像素,设置宽度为585像素,让两个div横向排列,设置了左浮动,设置了高度继承父元素,设置了文字大小,设置了文字颜色,设置了文字水平居中 -->
+            <div class="main-middle-top-item">
+              <!-- 让图片宽度继承父元素,占满父元素 -->
+              <img src="images/blog1.jpg">
+              <!-- 图片下方的文字 -->
+              <div class="main-middle-top-item-content">
+                <!-- 文字上方标题，上下外边距为16像素 -->
+                <p class="title">
+                  <!-- 里面的文字，设置文字颜色，设置文字大小，设置文字加粗 -->
+                  <a href="">Rit eget tincidunt condimentum</a>
+                </p>
+                <!-- 下方文字，默认样式 -->
+                <p>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                  quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              </div>
+              <a href="" class="btn">CONTINUE READING</a>
+            </div>
+            <div class="main-middle-top-item">
+              <img src="images/blog2.jpg">
+              <div class="main-middle-item-content">
+                <p class="title">
+                  <a href="">Rit eget tincidunt condimentum</a>
+                </p>
+                <p>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                  quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              </div>
+              <a href="" class="btn">CONTINUE READING</a>
+            </div>
+          </div>
+
+          <!-- 下方的三张图片，设置了高度 -->
+          <div class="main-middle-bottom">
+            <!-- 设置了三个盒子的宽度，高度继承，左浮动，文字大小，文字颜色，文字居中 -->
+            <!-- 设置了第二个盒子左右外边距 -->
+            <div class="main-middle-bottom-item">
+              <!-- 宽度继承 -->
+              <img src="images/blog3.jpg">
+              <div class="main-middle-item-content">
+                <!-- 下方标题，设置了上下外边距 -->
+                <p class="title">
+                  <!-- 设置了文字颜色，文字大小，文字加粗 -->
+                  <a href="">Rit eget tincidunt condimentum</a>
+                </p>
+                <!-- 默认样式 -->
+                <p>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                  quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              </div>
+              <!-- 粉色的按钮，和上面的样式相同 -->
+              <a href="" class="btn">CONTINUE READING</a>
+            </div>
+            <div class="main-middle-bottom-item">
+              <img src="images/blog4.jpg">
+              <div class="main-middle-item-content">
+                <p class="title">
+                  <a href="">Rit eget tincidunt condimentum</a>
+                </p>
+                <p>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                  quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              </div>
+              <a href="" class="btn">CONTINUE READING</a>
+            </div>
+            <div class="main-middle-bottom-item">
+              <img src="images/blog5.jpg">
+              <div class="main-middle-item-content">
+                <p class="title">
+                  <a href="">Rit eget tincidunt condimentum</a>
+                </p>
+                <p>ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                  quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+              </div>
+              <a href="" class="btn">CONTINUE READING</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 下面的一堆图片 -->
+    <section class="bottom">
+      <!-- 标题，设置了文字大小，设置了下外边距为16像素 -->
+      <h2>Gallery or portfolio</h2>
+      <!-- 副标题，默认样式 -->
+      <p class="sub-h2">You can make also a portfolio or image gallery.</p>
+      <!-- 下方的八张图片列表，设置了上外边距为60像素，清楚浮动 -->
+      <ul class="bottom-img">
+        <!-- 设置了浮动，设置每个li宽度为25%，因为每行要放四个  -->
+        <!-- 里面的图片设置为宽度继承，设置为了块级元素，不然元素基于基线对齐，下方会有一点空白 -->
+        <li><img src="images/portfolio-1.jpg"></li>
+        <li><img src="images/portfolio-2.jpg"></li>
+        <li><img src="images/portfolio-3.jpg"></li>
+        <li><img src="images/portfolio-4.jpg"></li>
+        <li><img src="images/portfolio-5.jpg"></li>
+        <li><img src="images/portfolio-6.jpg"></li>
+        <li><img src="images/portfolio-7.jpg"></li>
+        <li><img src="images/portfolio-8.jpg"></li>
+      </ul>
+    </section>
+
+<!-- 设置背景颜色，文字居中 -->
+    <footer>
+      <div class="wrap">
+        <!-- 设置文字大小，文字颜色 -->
+        <p class="copyright">Copyright © 2019.Company name All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
